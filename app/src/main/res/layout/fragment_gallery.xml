@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/shedeng_id"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="11" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="射灯" />
+
+        <Switch
+            android:id="@+id/shedeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:textOff="关闭"
+            android:textOn="开启"
+            android:thumb="@drawable/select_circle_setting"
+            android:track="@drawable/select_setting"/>
+
+        <ToggleButton
+            android:id="@+id/shedengchannel1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textOff="1"
+            android:textOn="1"
+            android:layout_marginLeft="250dp"/>
+
+        <ToggleButton
+            android:id="@+id/shedengcannel2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textOff="2"
+            android:textOn="2"
+            android:layout_marginLeft="300dp"/>
+
+        <ToggleButton
+            android:id="@+id/shedengchannel3"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textOff="3"
+            android:textOn="3"
+            android:layout_marginLeft="350dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/baojingdeng_id"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="20" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="报警灯" />
+
+        <Switch
+            android:id="@+id/baojingdeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:textOff="关闭"
+            android:textOn="开启"
+            android:thumb="@drawable/select_circle_setting"
+            android:track="@drawable/select_setting" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="220dp">
+        <EditText
+            android:id="@+id/menjin_id"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="15" />
+
+        <TextView
+            android:id="@+id/textVi1ew2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="门禁" />
+
+        <ToggleButton
+            android:id="@+id/menjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:textOff="开启"
+            android:textOn="开启" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="160dp">
+        <EditText
+            android:id="@+id/fengshan_id"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="14" />
+
+        <TextView
+            android:id="@+id/textVqi1ew2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="风扇" />
+
+        <Switch
+            android:id="@+id/fengshan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:textOff="关闭"
+            android:textOn="开启"
+            android:thumb="@drawable/select_circle_setting"
+            android:track="@drawable/select_setting" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="280dp">
+
+        <EditText
+            android:id="@+id/chuanglian_id"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/textVqi1qew2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="窗帘" />
+
+        <ToggleButton
+            android:id="@+id/curtainon"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:text="ToggleButton"
+            android:textOff="开"
+            android:textOn="开" />
+
+        <ToggleButton
+            android:id="@+id/curtainoff"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:text="ToggleButton"
+            android:textOff="关"
+            android:textOn="关" />
+
+        <ToggleButton
+            android:id="@+id/curtainstop"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:text="ToggleButton"
+            android:textOff="停"
+            android:textOn="停" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="340dp">
+
+        <EditText
+            android:id="@+id/hongwai_id"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView5"
+            android:ems="10"
+            android:inputType="number"
+            android:text="25"/>
+
+        <EditText
+            android:id="@+id/hongwai_tongdao"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textView6"
+            android:ems="10"
+            android:text="1"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="红外发射器" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hongwai_id"
+            android:text="频道号："
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/textView4"
+            android:text="板号："
+            android:textColor="#000000" />
+
+        <ToggleButton
+            android:id="@+id/hongwai"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hongwai_tongdao"
+            android:text="ToggleButton"
+            android:textOff="开"
+            android:textOn="开" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+</RelativeLayout>
