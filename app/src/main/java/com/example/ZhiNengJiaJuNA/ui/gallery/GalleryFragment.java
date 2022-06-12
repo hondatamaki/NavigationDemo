@@ -1,42 +1,26 @@
-package com.example.navigationdemo.ui.gallery;
+package com.example.ZhiNengJiaJuNA.ui.gallery;
 
 import android.app.Service;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.os.Vibrator;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.bizideal.smarthome.socket.ConstantUtil;
 import com.bizideal.smarthome.socket.ControlUtils;
-import com.bizideal.smarthome.socket.DataCallback;
-import com.bizideal.smarthome.socket.DeviceBean;
-import com.bizideal.smarthome.socket.SocketClient;
-import com.example.navigationdemo.R;
-import com.example.navigationdemo.databinding.FragmentGalleryBinding;
+import com.example.ZhiNengJiaJuNA.R;
+import com.example.ZhiNengJiaJuNA.databinding.FragmentGalleryBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class GalleryFragment extends Fragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
     private Vibrator mvibrator;

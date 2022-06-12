@@ -1,4 +1,4 @@
-package com.example.navigationdemo;
+package com.example.ZhiNengJiaJuNA;
 
 //import androidx.activity.result.ActivityResult;
 //import androidx.activity.result.ActivityResultCallback;
@@ -34,7 +34,7 @@ import com.bizideal.smarthome.socket.ConstantUtil;
 import com.bizideal.smarthome.socket.ControlUtils;
 import com.bizideal.smarthome.socket.LoginCallback;
 import com.bizideal.smarthome.socket.SocketClient;
-import com.example.navigationdemo.dao.UserDao;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Timer;
@@ -189,7 +189,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                         startActivity(intent);
                                         Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_LONG).show();
                                     } else {
-                                        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+                                        MaterialAlertDialogBuilder builder = (MaterialAlertDialogBuilder) new MaterialAlertDialogBuilder(LoginActivity.this);
+//                                        setTheme(Resources.Theme.Material3.Light);
                                         builder.setTitle("错误：");
                                         builder.setMessage("登陆失败");
                                         builder.setIcon(R.drawable.icon_error_login);

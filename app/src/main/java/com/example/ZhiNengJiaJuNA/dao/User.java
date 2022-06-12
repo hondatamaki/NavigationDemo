@@ -1,4 +1,4 @@
-package com.example.navigationdemo.dao;
+package com.example.ZhiNengJiaJuNA.dao;
 
 public class User {
     String wendu;

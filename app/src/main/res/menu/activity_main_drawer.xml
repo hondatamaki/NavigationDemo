@@ -10,9 +10,9 @@
         <item
             android:id="@+id/nav_gallery"
             android:title="控制页面" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:title="板号"
-        />
+<!--        <item-->
+<!--            android:id="@+id/nav_slideshow"-->
+<!--            android:title="板号"-->
+<!--        />-->
     </group>
 </menu>

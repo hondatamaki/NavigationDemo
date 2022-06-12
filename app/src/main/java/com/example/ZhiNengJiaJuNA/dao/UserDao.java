@@ -1,4 +1,4 @@
-package com.example.navigationdemo.dao;
+package com.example.ZhiNengJiaJuNA.dao;
 
 import android.content.Context;
 import android.database.Cursor;

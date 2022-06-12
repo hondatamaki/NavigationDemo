@@ -1,4 +1,4 @@
-package com.example.navigationdemo.ui.slideshow;
+package com.example.ZhiNengJiaJuNA.ui.slideshow;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -15,8 +15,9 @@ import android.widget.Switch;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.navigationdemo.R;
-import com.example.navigationdemo.dao.UserDao;
+import com.example.ZhiNengJiaJuNA.R;
+import com.example.ZhiNengJiaJuNA.dao.User;
+import com.example.ZhiNengJiaJuNA.dao.UserDao;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Timer;
@@ -144,6 +145,15 @@ boolean jc=false;
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.boradIdupdate:
+                String Shidu=shidu.getText().toString();
+                String Wendu=wendu.getText().toString();
+                String Guangzhao=guangzhao.getText().toString();
+                String Yanwu=yanwu.getText().toString();
+                String Pm25=pm25.getText().toString();
+                String Co2=co2.getText().toString();
+                String Ranqi=ranqi.getText().toString();
+                String Hongwai=hongwai.getText().toString();
+                User user=new User(Wendu,Shidu,Guangzhao,Yanwu,Pm25,Co2,Ranqi,Hongwai);
                 if (bupdate.isClickable()){
                     if (s==1){
                         Snackbar.make(view, "请取消锁定", Snackbar.LENGTH_LONG)
@@ -161,6 +171,8 @@ boolean jc=false;
                             Snackbar.make(view, "请输入数据", Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
                             return;
+                        }else {
+                            dao.insert(user);
                         }
                     }
                 }

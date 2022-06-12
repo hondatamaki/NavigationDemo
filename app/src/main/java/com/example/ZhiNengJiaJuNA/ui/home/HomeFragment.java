@@ -1,8 +1,6 @@
-package com.example.navigationdemo.ui.home;
+package com.example.ZhiNengJiaJuNA.ui.home;
 
-import android.app.Activity;
 import android.app.Service;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -11,31 +9,23 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.bizideal.smarthome.socket.ConstantUtil;
 import com.bizideal.smarthome.socket.ControlUtils;
 import com.bizideal.smarthome.socket.DataCallback;
 import com.bizideal.smarthome.socket.DeviceBean;
 import com.bizideal.smarthome.socket.SocketClient;
-import com.example.navigationdemo.MainActivity;
-import com.example.navigationdemo.R;
-import com.example.navigationdemo.databinding.FragmentHomeBinding;
-import com.example.navigationdemo.ui.gallery.GalleryFragment;
+import com.example.ZhiNengJiaJuNA.R;
+import com.example.ZhiNengJiaJuNA.databinding.FragmentHomeBinding;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Timer;
@@ -225,24 +215,24 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 //        return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.reset:
-                wenduid.setText("");
-                shiduid.setText("");
-                guangzhaoid.setText("");
-                ranqiid.setText("");
-                yanwuid.setText("");
-                co2id.setText("");
-                pm25id.setText("");
-                rentihongwaiid.setText("");
-                Toast.makeText(getContext(),"点了菜单",Toast.LENGTH_SHORT).show();
-                break;
-        }
-
-        return true;
-
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//        switch (item.getItemId()){
+//            case R.id .reset:
+//                wenduid.setText("");
+//                shiduid.setText("");
+//                guangzhaoid.setText("");
+//                ranqiid.setText("");
+//                yanwuid.setText("");
+//                co2id.setText("");
+//                pm25id.setText("");
+//                rentihongwaiid.setText("");
+//                Toast.makeText(getContext(),"点了菜单",Toast.LENGTH_SHORT).show();
+//                break;
+//        }
+//
+//        return true;
+//
+//    }
 }
 

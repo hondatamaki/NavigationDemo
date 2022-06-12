@@ -1,4 +1,4 @@
-package com.example.navigationdemo.ui.slideshow;
+package com.example.ZhiNengJiaJuNA.ui.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
